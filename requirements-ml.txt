@@ -1,0 +1,12 @@
+# 可选的重型依赖：本地跑真实的降噪 / 语音转写 / 说话人分离时才需要，
+# CI 与单元测试完全不需要（未安装时后端走离线分支并给出确定性错误）。
+-r requirements.txt
+openai-whisper==20231117
+pyannote.audio==3.1.1
+torch==2.1.2
+torchaudio==2.1.2
+numpy==1.26.2
+pandas==2.1.4
+soundfile==0.12.1
+librosa==0.10.1
+openai==1.3.7
